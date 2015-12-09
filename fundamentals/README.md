@@ -1,11 +1,10 @@
 # Introduction to Node: The Fundamentals
 
-From (Egghead.io)[https://egghead.io/series/introduction-to-node-the-fundamentals]
+The notes here and code samples in this directory were made while following along with a Node.js lesson series from (Egghead.io)[https://egghead.io/series/introduction-to-node-the-fundamentals].
 
 ## "Global" Insights
 
 `node` is an event loop processor. It runs through in a loop looking for events that it can execute.
-
 
 ## Mysteries of Context
 
@@ -173,29 +172,3 @@ Remember:
 - `events` module is global
 - 10+ events associated with a listener triggers a warning from Node; override with emitter.setMaxListeners(); setting to '0' means unlimited listeners
 - a `server` using the `http` module is an event emitter object
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-***
