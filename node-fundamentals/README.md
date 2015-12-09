@@ -2,7 +2,7 @@
 
 The notes here and code samples in this directory were made while following along with a Node.js lesson series from (Egghead.io)[https://egghead.io/series/introduction-to-node-the-fundamentals].
 
-## "Global" Insights
+## General Insights
 
 `node` is an event loop processor. It runs through in a loop looking for events that it can execute.
 

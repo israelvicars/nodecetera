@@ -2,7 +2,7 @@
 
 The notes here and code samples in this directory were made while following along with a Node.js lesson series from (Egghead.io)[https://egghead.io/series/getting-started-with-express-js].
 
-### Global Insights
+### General Insights
 
 
 
