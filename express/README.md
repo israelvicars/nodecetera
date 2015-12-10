@@ -106,7 +106,16 @@ Remember:
 
 ### Routing Code Organization
 
+Tasks:
 
+- Code abstraction and organization for the case of lots of handlers and helper functions!
+- In example, username handling is moved into its own file as an express router associated with the express app
+
+Remember:
+
+- `app.route(...)` to chain route handlers off of one route
+- `express.Router()` is like a "mini app", a self contained router instance that can be imported and used with an express app instance
+- `mergeParams: true` is a router setting that lets an express app share parameter "stuff" with a router instance
 
 ### Using Streams
 
