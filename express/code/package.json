@@ -15,8 +15,11 @@
   },
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3",
-    "lodash": "^3.10.1"
+    "consolidate": "^0.13.1",
+    "express": "^4.13.1",
+    "handlebars": "^3.0.3",
+    "jade": "^1.11.0",
+    "lodash": "^3.10.0"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"

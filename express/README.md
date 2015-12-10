@@ -34,8 +34,8 @@ Remember:
 
 Tasks:
 
-- Read in a JSON file using `fs` module
-- Parse a JSON file using `lodash` module
+- Read in a JSON file using `fs` module (https://nodejs.org/api/fs.html) which is part of node
+- Parse a JSON file using `lodash` module (https://www.npmjs.com/package/lodash)
 - Use a forEach loop to populate an empty array var with data from each line of the JSON file
 - Use `JSON.stringify()` to make a new json object var from the array, and send that json object var with the response
 - Create a dynamic route for users by `/:username`
@@ -52,7 +52,19 @@ Remember:
 
 ### Template Engines
 
+Tasks:
 
+- Use express's support for templates engines
+
+	1. Add `jade`, `handlebars`, and `consolidate` modules to project
+	2. Require `consolidate` to use handlebars with express
+	3. Set `views` to `/views/` dir
+	4. Set template engine to either `jade` or `hbs` (handlebars)
+	5. `res.render('index', {users: users})` to render template in route handler, where users are populated on the selected template
+
+Remember:
+
+- Jade has built-in support for express, mounds don't!
 
 ### Static Files
 
