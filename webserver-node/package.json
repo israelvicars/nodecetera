@@ -1,0 +1,17 @@
+{
+  "name": "webserver-node",
+  "version": "0.0.0",
+  "description": "Node web server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Israel Vicars <israelvicars@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axon": "^2.0.2",
+    "express": "^4.13.3",
+    "request": "^2.65.0",
+    "socket.io": "^1.3.7"
+  }
+}

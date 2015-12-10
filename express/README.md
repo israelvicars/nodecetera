@@ -2,7 +2,13 @@
 
 The notes here and code samples in this directory were made while following along with a Node.js lesson series from (Egghead.io)[https://egghead.io/series/getting-started-with-express-js].
 
-### General Insights
+### General Insights & Lingering Questions
+
+Q's
+
+- When should you use `scripts` in `package.json` instead of `gulp` or `grunt`?
+	1. When `gulp` or `grunt` aren't being used as build tools.
+	2.
 
 
 
@@ -18,13 +24,30 @@ Tasks:
 6. Added `dev` line to `package.json` under `scripts`, so that the script `"nodemon index.js"` runs with `npm run dev` (`run` being an alias of `run-script`)
 7. Added another `get` request to index.js to return "Yo!" to the `/yo` route
 
-
 Remember:
 
--
+- Lots of pleasant documentation on NPM's cli and more at https://docs.npmjs.com
+- Great examples here for configuring `package.json`, like `scripts`!
+
 
 ### Routing Basics
 
+Tasks:
+
+- Read in a JSON file using `fs` module
+- Parse a JSON file using `lodash` module
+- Use a forEach loop to populate an empty array var with data from each line of the JSON file
+- Use `JSON.stringify()` to make a new json object var from the array, and send that json object var with the response
+- Create a dynamic route for users by `/:username`
+- Create a dynamic route using a regex
+- Reorder routes so all dynamic routes can run before the response is returned
+
+Remember:
+
+- `/:username` treats that part of the route as a general parameter; the request object has a parameter `params` to refer to a corresponding route parameter, e.g. `req.params.username`
+- a regex (e.g. `/big.*/`) can be used to trigger a dynamic route handler
+- Order of routes matters! Once the response is sent, you can't run another route handler (in the case of a route that triggers multiple route handlers)
+- `next()` triggers the next route handler
 
 
 ### Template Engines

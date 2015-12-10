@@ -1,0 +1,24 @@
+{
+  "name": "pandaxpress",
+  "version": "1.0.0",
+  "description": "Orange chicken with a side of REST",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Israel Vicars <israelvicars@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/israelvicars/nodecetera.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
