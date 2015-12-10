@@ -80,7 +80,14 @@ Tasks:
 
 ### HTTP Verbs
 
+Tasks:
 
+- Lots of code updates
+- `edit()`, `save()` and `del()` links added which call ajax functions
+- `edit()` makes inputs tagged with `.edit` editable
+- `save()` calls a `PUT` method to update data and reload page
+- `del()` calls a `DELETE` method
+- `body-parser` module used
 
 ### Advanced Routing
 
