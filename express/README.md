@@ -91,7 +91,18 @@ Tasks:
 
 ### Advanced Routing
 
+Tasks:
 
+- `verifyUser` function demonstrates using `next()` to move to another route if a route parameter condition isn't met
+- `/:foo` route example demonstrates a default response return
+
+Remember:
+
+- `res.redirect(...)` redirects user to another route
+- `res.status(404).send(...)` chains the status function and send functions to send a http 404 status and corresponding message
+- `res.download(...)` triggers a download
+- Try `res.json(...)` in an API server!
+- `app.all(...)` method can apply to all cases of a given route, which can be useful for data collection, etc.
 
 ### Routing Code Organization
 
