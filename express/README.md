@@ -68,7 +68,15 @@ Remember:
 
 ### Static Files
 
+Tasks:
 
+- Serve user image in templates
+
+0. Add images folder to repo
+1. `app.use(express.static('images'))` to serve static images from a directory called `images`
+2. `app.use('/profilepics', express.static('images'))` to serve static images from a directory called `profilepics/images`
+3. Update `index.hbs` template accordingly
+4. Create non-list version of `index.hbs` called `user.hbs` that shows username, picture for a single user
 
 ### HTTP Verbs
 
