@@ -140,6 +140,7 @@ Remember:
 	1. Application-level (`app.get(...)`)
 	2. Router-level (`router.get(...)`)
 	3. Error-handling (contains the arguments `err, req, res, next`, most importantly `err`)
+	(Technically, there's also Built-in and 3rd-party)
 - `app.use(..)` or `router.use(...)` - Alternative to `.all(...)`
 
 ### MongoDB Integration
@@ -158,7 +159,13 @@ Tasks:
 
 ### Using virtual properties with Mongoose and MongoDB
 
+Tasks:
 
+- `collectionSchema.virtual('schema.prop')` - get(), set() value of a property on a schema object as a function of other properties, i.e. calculated answers
+
+Remember:
+
+- `findOneAndUpdate()` is a specialized helper that doesn't work with virtual setters; use `findOne` instead
 
 
 
