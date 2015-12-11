@@ -127,12 +127,24 @@ Tasks:
 - `thatReadStreamInput.pipe(thatWriteStreamOutput)`
 
 Remember:
+
 - `JSONstream.parse(...)` - parses JSON data into JS object(s)
 - `JSONstream.stringify(...)` - parses JSON data into a string
 
 ### Middleware
 
+Tasks:
 
+-
+
+Remember:
+
+- *Middleware* (in Express) - "Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next."
+- Three types of Middleware:
+	1. Application-level (`app.get(...)`)
+	2. Router-level (`router.get(...)`)
+	3. Error-handling (contains the arguments `err, req, res, next`, most importantly `err`)
+- `app.use(..)` or `router.use(...)` - Alternative to `.all(...)`
 
 ### MongoDB Integration
 
