@@ -133,10 +133,6 @@ Remember:
 
 ### Middleware
 
-Tasks:
-
--
-
 Remember:
 
 - *Middleware* (in Express) - "Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next."
@@ -148,7 +144,17 @@ Remember:
 
 ### MongoDB Integration
 
+Tasks:
 
+- `mongod` in terminal to start mongoDB
+- `mongoimport` in terminal to import JSON user list
+-  `require('mongodb').MongoClient` -> `MongoClient.connect(uri, f(err, db)){...}` - manually parse db
+- `require('mongoose')` -
+- `mongoose.Schema` - database schema as an object model
+- `mongoose.model('CollectionName', 'collectionSchema')`
+- Remove file system dependencies, we're working with a proper database now!
+- Add database calls to route handlers to grab an object from the database and make it available to rendered views
+- Update database with function calls from rendered views
 
 ### Using virtual properties with Mongoose and MongoDB
 
