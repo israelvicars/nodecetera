@@ -8,7 +8,7 @@ Q's
 
 - When should you use `scripts` in `package.json` instead of `gulp` or `grunt`?
 	1. When `gulp` or `grunt` aren't being used as build tools.
-	2.
+	2. ...
 
 
 
@@ -119,7 +119,16 @@ Remember:
 
 ### Using Streams
 
+Tasks:
 
+- `require('fs')` - file system module that comes with node
+- `fs.createReadStream(someInputFile.name)` - go read some data so I can put it in some var so I can reference it
+- `fs.createWriteStream(someOutputFile.name)` - I'm gonna give you data that you can go write somewhere I want it put
+- `thatReadStreamInput.pipe(thatWriteStreamOutput)`
+
+Remember:
+- `JSONstream.parse(...)` - parses JSON data into JS object(s)
+- `JSONstream.stringify(...)` - parses JSON data into a string
 
 ### Middleware
 
